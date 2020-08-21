@@ -1,2 +1,2 @@
 # web_video
-Web de videos
+Web de ejemplo para mostrar videos
