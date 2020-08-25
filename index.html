@@ -21,17 +21,17 @@
         height: 80px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .header__img {
         width: 250px;
-        
         margin-top: 12px;
         margin-left: 10px;
     }
 
     .header__menu {
-        margin-right: 60px;
+        margin-right: 30px;
     }
 
     .header__menu ul {
@@ -55,20 +55,26 @@
         text-decoration: none;
         color: #ffffff;
     }
-    .header__menu  li a{
+    .header__menu  li a: :hover{
         text-decoration: underline;
     }
   
     .header__menu--profile {
         margin-right: 8px;
-        width: 40px;
+        
         display: flex;
+        align-items: center;
+        cursor: pointer;
     }
 
     .header__menu--profile img{
         margin-right: 8px;
         width: 40px;
+    }
 
+    .header__menu--profile p{
+        margin: 0;
+        color: white;
     }
 </style>
 
@@ -79,15 +85,17 @@
             <div class="header__menu--profile">
                 <img src="img/user-icon.png" alt="User">
                 <p>Perfil</p>
+            </div>
                 <ul>
                     <li><a href="/">Acount</a></li>
                     <li><a href="/">Logout</a></li>
                 </ul>
-
-            </div>
-
         </div>
     </header>
+    <section class="main">
+        <h2 class="main_title">¿Qué quieres ver hoy?</h2>
+        <input class="main__input" type="text" placeholder="Buscar...">
+    </section>
 </body>
 
 </html>
