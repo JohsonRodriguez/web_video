@@ -31,6 +31,7 @@
         cursor: pointer;
         transition: 450ms all;
         transform-origin: center left;
+        position: relative;
     }
     .carousel-item:hover ~ .carousel-item{
         transform: translate3d(100px,0,0);
@@ -42,6 +43,36 @@
         transform: scale(1.5);
         opacity: 1;
     }
+    .carousel-item__img{
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+    }
+    .carousel-item__detail{
+        background: linear-gradient(to top,rgba(0,0,0,0.9),rgba(0,0,0,0)100%);
+        font-size: 10px;
+        opacity: 0;
+        transition: 450ms opacity;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+    .carousel-item__detail img{
+        height: 15px;
+    }
+    .carousel-item__detail p{
+        margin: 0;
+    }
+    .carousel-item__detail:hover{
+        opacity: 1;
+        color: white;
+    }
 </style>
 <body>
     <section class="carousel">
@@ -50,8 +81,8 @@
                 <img class="carousel-item__img" src="https://images.pexels.com/photos/5108638/pexels-photo-5108638.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="love">
                 <div class="carousel-item__details" >
                     <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
+                        <img src="img/play.png"alt="Plus">
+                    <img src="img/plus.png" alt="Plus">
                     </div>
                 </div>
                 <p class="carousel-item__details--title">Titulo descriptivo</p>
